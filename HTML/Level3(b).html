@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forms</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 
     Topics to be covered:
     -Form and its various tags and attributes
@@ -24,66 +24,78 @@
     -->
 
     <form action="/action">
-        <label >
-            Text 
-            <input type="text" placeholder="Enter Username">
-        </label>
-        <br>
-        <label for="password">Enter your password</label>
-        <input type="password" id="password" placeholder="Enter password">
-        <br>
-        Number
-        <input type="number" placeholder="Enter a number">
-        <br>
-        Time 
-        <input type="time">
-        <br>
-        Color 
-        <input type="color">
-        <br>
-        <div>
-            Choose your subjects:
-            <label for="sub">Maths</label>
-            <input type="checkbox" name="sub" id="sub" value="math" >
-            <label for="sub">Scince</label>
-            <input type="checkbox" name="sub" id="sub" value="sci">
-            <label for="sub">English</label>
-            <input type="checkbox" name="sub" id="sub" value="eng">
-        </div>
-        <br>
-        <div>
-            Select any one fruit:
-            <input type="radio" name="fruit" id="apple" value="apple">
-            <label for="apple">Apple</label>
-            <input type="radio" name="fruit" id="mango" value="mango">
-            <label for="mango">Mango</label>
-            <input type="radio" name="fruit" id="banana" value="banana">
-            <label for="">Banana</label>
-        </div>
-        <br>
-        <div>
-            Enter your profession:
-            <select name="profession" id="profession">
-                <option value="">Select your option</option>
-                <option value="stu">Student</option>
-                <option value="dev">Developer</option>
-            </select>
-        </div>
-        <label for="vol">Select your volume level:</label>
-        <input type="range" name="vol" id="vol" min="0" max="100" value="60" step="10 ">
-        <br>
-        <label for="feedback">Please give your feedback here: </label>
-        <textarea name="feedback" id="feedback" rows="5" cols="100" placeholder="Write Here!"></textarea>
-        <br>
-        <button type="submit">Submit</button>
-        <button type="button">Hello</button>
-        <button type="reset">Reset</button>
+      <label> Text </label>
+      <input type="text" placeholder="Enter Username" />
+      <br />
+      <label for="password">Enter your password</label>
+      <input type="password" id="password" placeholder="Enter password" />
+      <br />
+      Number
+      <input type="number" placeholder="Enter a number" />
+      <br />
+      Time
+      <input type="time" />
+      <br />
+      Color
+      <input type="color" />
+      <br />
+      <div>
+        Choose your subjects:
+        <label for="sub">Maths</label>
+        <input type="checkbox" name="sub" id="sub" value="math" />
+        <label for="sub">Scince</label>
+        <input type="checkbox" name="sub" id="sub" value="sci" />
+        <label for="sub">English</label>
+        <input type="checkbox" name="sub" id="sub" value="eng" />
+      </div>
+      <br />
+      <div>
+        Select any one fruit:
+        <input type="radio" name="fruit" id="apple" value="apple" />
+        <label for="apple">Apple</label>
+        <input type="radio" name="fruit" id="mango" value="mango" />
+        <label for="mango">Mango</label>
+        <input type="radio" name="fruit" id="banana" value="banana" />
+        <label for="">Banana</label>
+      </div>
+      <br />
+      <div>
+        Enter your profession:
+        <select name="profession" id="profession">
+          <option value="">Select your option</option>
+          <option value="stu">Student</option>
+          <option value="dev">Developer</option>
+        </select>
+      </div>
+      <label for="vol">Select your volume level:</label>
+      <input
+        type="range"
+        name="vol"
+        id="vol"
+        min="0"
+        max="100"
+        value="60"
+        step="10 "
+      />
+      <br />
+      <label for="feedback">Please give your feedback here: </label>
+      <textarea
+        name="feedback"
+        id="feedback"
+        rows="5"
+        cols="100"
+        placeholder="Write Here!"
+      ></textarea>
+      <br />
+      <button type="submit">Submit</button>
+      <button type="button">Hello</button>
+      <button type="reset">Reset</button>
     </form>
-    <hr>
-    
+    <hr />
+
     <form action="https://www.google.com/search">
-        <input type="text" name="q" id="q" placeholder="Search in Google">
-        <button>Submit</button>
+      <input type="text" name="q" id="q" placeholder="Search in Google" />
+      <button>Submit</button>
     </form>
-</body>
+  </body>
 </html>
