@@ -1,0 +1,56 @@
+/*
+  Basic format of CSS: 
+    -Selector: element to be styled
+    -Property: what style is to be applied 
+    -Value: values assosiated with properties
+  Three ways to include CSS in files:
+    -inline styles: Writing style directly inline on each element
+    -Internal - by using a <style> element in the <head> section.
+    -External - by using a <link> element to link to an external CSS file.
+  Note: Inline styles have the highest priority in HTML, followed by internal styles, 
+    and then external styles. This is because inline styles are written directly on the element. 
+  CSS Legal Color Values:
+    -Hexadecimal Colors
+        A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) 
+        hexadecimal integers specify the components of the color. All values must be between 00 and FF.
+        For example, the #0000ff value is rendered as blue, because the blue component is set to its highest
+        value (ff) and the others are set to 00.
+    -RGB Colors
+        An RGB color value is specified with the rgb() function, which has the following syntax:
+            rgb(red, green, blue)
+            Each parameter (red, green, and blue) defines the intensity of the color and can be an integer 
+            between 0 and 255 or a percentage value (from 0% to 100%).
+            For example, the rgb(0,0,255) value is rendered as blue, because the blue parameter is set to its 
+            highest value (255) and the others are set to 0.
+            Also, the following values define equal color: rgb(0,0,255) and rgb(0%,0%,100%).
+
+  Text properties: 
+    text-align: left/start, right/end, center, justify
+    font-weight:normal(400), bold(700), bolder, lighter
+    text-decoration:underline, overline, line-through, or red underline, wavy overline, dotted line-through
+    line-height: normal, 2.5
+    letter-spacing: normal, 10px
+    font-size:50px
+        font-size units: absolute(px, pt, pc, etc) or relative(%, em, rem, etc)
+        1 inch = 96px (pixels are not suitable for responsive websites
+    font-family: arial, didot, sans-serif
+    
+        */
+
+    h4{
+        color: yellow;
+        background-color: rgb(70, 187, 200);
+        text-align: center;
+        font-weight: normal;
+        text-decoration: green underline;
+        line-height: normal;
+        letter-spacing: 10px;
+        font-size: large;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    h1{
+        text-decoration: overline;
+    }
+    p {
+        color: red;
+      }
