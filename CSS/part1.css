@@ -3,7 +3,11 @@
     -Selector: element to be styled
     -Property: what style is to be applied 
     -Value: values assosiated with properties
-  Three ways to include CSS in files:
+   syntax:
+    selector {
+      property : value;
+    }
+    Three ways to include CSS in files:
     -inline styles: Writing style directly inline on each element
     -Internal - by using a <style> element in the <head> section.
     -External - by using a <link> element to link to an external CSS file.

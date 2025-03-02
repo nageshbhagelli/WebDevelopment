@@ -1,0 +1,178 @@
+/*
+    -Universal selector(*) : to select everything in a document
+     usually not used!
+    -Generally element selector is used to assign properties to the elements.
+      Multiple elements can be assigned same properties by using comma(,) as a separator.
+    
+    -ID selector(#) : selects an element based on the value of the element's id attribute.
+     syntax:
+        #myId {
+            property : value;
+        }
+
+    -class selector(.) : selects an element based on their class attribute.
+     syntax: 
+        .myClass {
+            property : value;
+        }
+
+    -Descendent selector: The descendant combinator matches all elements that are descendants of a specified element.
+    Ex: 
+        div p {
+            property: value;
+        }
+    
+    -Adjacent sibling combinator(+): It is used to select an element that is directly after another specific element. 
+        Sibling elements must have the same parent element, and "adjacent" means "immediately following".
+     Ex: 
+        div + p {
+            property: value;
+        }
+    -Child combinator(>) : selects all elements that are the children of a specified element.
+     Ex: 
+        span > button {
+            property: value;
+        }
+    -Attribute selector: selects elements based on the presence or value of a given attribute
+    Ex:
+        input[attr="value"] {
+            property: value;
+        }
+    
+*/
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h3 {
+    color: purple;
+}
+
+h1  {
+    color: #b92b27;
+}
+
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: green;
+    color: white;
+}
+
+.post a {
+    color: purple;
+    background-color: yellow;
+}
+
+nav ul li a {
+    color: hotpink;
+}
+
+p + h3 {
+    text-decoration: underline;
+}
+
+.upvote + button {
+    background-color: cornflowerblue;
+    color: darkblue;
+}
+
+div > input {
+    background-color: darksalmon;
+    color: black;
+}
+
+input[type="text"] {
+    color: red;
+}
+
+input[type="password"] {
+    color: green;
+}
+
+input[type] {
+    background-color: ghostwhite;
+}
+
+/*
+    -Pseudo class: It is a keyword added to a selector that specifies a special state of the selected element(s).
+    Ex: 
+        :hover
+        :active
+        :checked
+        :nth-of-type() - helps to select nth elements
+
+    
+*/
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+h3:hover {
+    text-decoration: line-through;
+}
+
+button:active {
+    background-color: brown;
+    color: white;
+}
+
+input[type="radio"]:checked + label {
+    color: red;
+    font-weight: bold;
+}
+
+/*
+    -Pseudo Elements: It is a keyword added to a selector that lets you style a specific part of the selected element(s). 
+    Ex: 
+        ::first-letter
+        ::first-line
+        ::selection
+*/
+
+h1::first-letter {
+    color: black;
+}
+
+h3::selection {
+    background-color: rgb(213, 213, 29);
+}
+
+/*
+-CSS : Cascading StyleSheets
+What is cascade in CSS?
+The CSS gascade algorithm's job is to select CSS declarations in order to determine the correct values
+for CSS properties.
+Final style at last specified is applied if the specificity is same
+
+-Selector Specificity
+What is specificity?
+    Specificity is an algorithm that calculates the weight that is applied to a given CSS declaration.
+    id > class > element
+    more selectors is better than less selectors
+    if specificity is same then cascading takes over
+
+-Inline styles are more specific than id 
+
+-!important : it is used to show most specific thing in the document.
+    it cannot to be changed at any time
+Ex: 
+    h3 {
+        background-color: black !important; 
+    }
+
+-Elements inherit properties from their parents or grandparents.
+
+-Online color palettes are available. check and choose which set of colors look
+    good on the webpage.
+*/
