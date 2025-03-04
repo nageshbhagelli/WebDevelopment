@@ -1,0 +1,106 @@
+/*
+Border : width, style, color
+Border short hand- border: 5px solid black
+Border Sides:
+ To control an individual side of the box
+    • border-left
+    • border-right
+    • border-top
+    • border-bottom
+
+Border Radius
+Used to round the corners of an element's outer border edge
+    div {
+    border-radius: 15px;
+    }
+    div {
+    border-radius: 50%;  (Creates cirle if the height and width are equal)
+Border corners:
+ To control an individual corner of the box
+    • border-top-right
+    • border-top-left
+    • border-bottom left
+    • border-bottom right
+
+Padding: It is the space between the content and the border
+    • padding-left
+    • padding-right
+    • padding-top
+    • padding-bottom
+Padding Shorthand
+    #1. for all 4 sides
+        padding: 50px;
+    #2. top & bottom | left & right
+        padding: 1px 2px;
+    #3. top | left & right | bottom
+        padding: lpx 2px 3px;
+    #4. top | right | bottom | left   
+    *clockwise
+        padding: lpx 2px 3px 4px;
+
+Margin: To set spacing on the outside of border
+    • margin-left
+    • margin-right
+    • margin-top
+    • margin-bottom
+Margin short hand is as same as padding short hand  
+
+
+Block Elements
+Takes up the full-width available (whole block)
+Start from new line
+
+Inline Elements
+Takes up only necessary width
+Don't start from new line
+
+Display Property: It sets whether an element is treated as a block or inline element and the layout used for its children
+display : inline
+display : block
+display : inline-block (retains styling and make block elements inline)
+display : none (hides the element)
+
+For inline elements padding and margin properties are set for left and right only. Height and width properties are not applied.
+
+
+*/
+
+
+div {
+    height: 200px;
+    width: 500px;
+    background-color: rgb(231, 106, 160);
+    border: 5px solid black;
+    border-left: 5px dashed blue;
+    border-radius: 20px ;
+    border-top-right-radius:0px ;
+    border-bottom-left-radius: 0px;
+    padding-top: 10px;
+    margin: 20px
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 0, 0.749);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 50px;
+}
+
+/*
+Units in CSS: 
+   Percentages (%): It is often used to define a size as relative to an element's parent object.
+    eg:
+    width : 33.33% II relative to the parent
+    margin-left : 50% llrelative to the parent size 
+
+   em: Relative to  Font size of the parent, in the case of typographical properties like font-size , and
+        font size of the element itself, in the case of other properties like width
+      Disadvantage: Snow-balling effect.
+
+    rem(root em) : Relative to font size of the root element.  
+
+
+        */
+

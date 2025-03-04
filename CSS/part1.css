@@ -27,8 +27,15 @@
             For example, the rgb(0,0,255) value is rendered as blue, because the blue parameter is set to its 
             highest value (255) and the others are set to 0.
             Also, the following values define equal color: rgb(0,0,255) and rgb(0%,0%,100%).
-
-  Text properties: 
+  
+  Alpha channel: Sets opacity for a color, ranges from 0 to 1. Ex: rgba(255, 255, 255, 0.3)
+      0 makes color hidden and 1 makes color completely visible.
+  
+  Opacity: Sets the opacity for the element. Ranges from 0-1. 0 means hidden and 1 means visible.
+    Ex: opacity: 0.5;
+  
+  
+      Text properties: 
     text-align: left/start, right/end, center, justify
     font-weight:normal(400), bold(700), bolder, lighter
     text-decoration:underline, overline, line-through, or red underline, wavy overline, dotted line-through
@@ -43,7 +50,7 @@
 
     h4{
         color: yellow;
-        background-color: rgb(70, 187, 200);
+        background-color: rgba(46, 204, 15, 0.5);
         text-align: center;
         font-weight: normal;
         text-decoration: green underline;
@@ -54,6 +61,7 @@
     }
     h1{
         text-decoration: overline;
+        opacity: 0.5;
     }
     p {
         color: red;

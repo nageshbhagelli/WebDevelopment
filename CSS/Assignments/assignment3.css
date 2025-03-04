@@ -1,0 +1,17 @@
+div {
+    height: 300px;
+    width: 300px;
+    background-color: pink;
+    border: 5px dotted black;
+    /* margin-top: 20px;
+    margin-right: 1em;
+    margin-bottom: 40px;
+    margin-left: 2em;
+    padding: 1em; */
+    border-radius: 50%;
+    display: inline-block;
+}
+
+li {
+    display: inline;
+}
