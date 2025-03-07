@@ -1,0 +1,114 @@
+/*
+-CSS Animations: To animate CSS elements
+    @keyframes myName {
+        from { font-size : 20px; }
+        to { font-size : 40px; }
+    }
+    Create the animation frame and add properties to the element.
+    Properties:
+        • animation-name
+        •animation-duration
+        •animation-timing-function
+        • animation-delay
+        • animation-iteration-count
+        • animation-direction
+    
+    Animation Shorthand
+        animation : myName 2s linear 3s infinite norma; (name, duration, timing-funtion, delay, count, direction)
+
+    -% in Animation
+        @keyframesmyName {
+            0% { font-size : 20px; }
+            50% { font-size : 30px; }
+            100% { font-size : 40px; }
+        }
+
+*/
+
+/*
+-Media Queries: Help create a responsive website
+    media features - width (of viewport)
+        @media (width : 400px) {
+            div {
+            background-color : red;
+            }
+        }
+
+        @media (min-idth : 400px) {
+            div {
+            background-color : red;
+            }
+        }
+
+        @media (min-width : 400px) {
+            div {
+            background-color : red;
+            }
+        }
+
+        @media (min-width : 200px) and (max : 300px) {
+            div {
+            background-color : red;
+            }
+        }
+    
+    media features-orientation (of viewport)
+        @media (orientation : landscape) {
+            div {
+            background-color : red;
+            }
+        }
+
+-z-index: It decides the stack level of elements. To define z-index position shouldn't be static and default
+    Overlapping elements with a larger z-index cover those with a smaller one.
+    z-index : auto (O)
+    z-index : 1/2/ ...
+    z-index : -1/-2/ ...
+
+
+
+
+*/
+
+.box {
+    height: 100px;
+    width: 300px;
+    background-color: pink;
+    animation-name: fontAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    transition-delay: 0;
+    animation-iteration-count: 3;
+    animation-direction: alternate;
+}
+
+@keyframes fontAnimation {
+    from {
+        font-size: 20px;
+    }
+    to {
+        font-size: 40px;
+    }
+}
+
+h1 {
+    background-color: yellow;
+    border: 2px solid black;
+}
+
+@media  (min-width : 200px) and (max-width : 400px) {
+    h1 {
+        background-color: red;
+        color: white;
+    }
+}
+
+@media (orientation : landscape) {
+    .box {
+    background-color : red;
+    }
+
+    h1 {
+        background-color: green;
+    }
+}
