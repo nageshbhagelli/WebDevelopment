@@ -52,7 +52,6 @@ Arrays: (linear collection of things)
     Nested array or multi-dimensional array:
         let nums = [ [2,4], [3,6], [4,8]]
 
-
 */
 
 let students = ["arya", "surya", "maurya", "suma"];
