@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filtered Name Input</title>
+    <script>
+      function updateHeading() {
+        let input = document.getElementById("nameInput").value;
+        let filteredInput = input.replace(/[^a-zA-Z ]/g, "");
+        document.getElementById("nameInput").value = filteredInput;
+        document.getElementById("nameHeading").textContent = filteredInput;
+      }
+    </script>
+  </head>
+  <body>
+    <input
+      type="text"
+      id="nameInput"
+      placeholder="Enter your name"
+      oninput="updateHeading()"
+    />
+    <h2 id="nameHeading"></h2>
+  </body>
+</html>
