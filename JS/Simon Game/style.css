@@ -1,0 +1,44 @@
+body { 
+    text-align: center;
+    background-color: azure;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    margin: 1rem;
+    margin-bottom: 2rem;
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.flash {
+    background-color: white;
+}
+
+.userFlash {
+    background-color: black;
+}
+
+
